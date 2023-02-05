@@ -88,7 +88,7 @@ Who knows haha, I might try it in the future */
 /* For mobile devices */
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
     body {background-color: white;}
 
     h1 {
