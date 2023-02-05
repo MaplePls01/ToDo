@@ -88,7 +88,7 @@ Who knows haha, I might try it in the future */
 /* For mobile devices */
 
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
     h1 {
         font-size: 4.5rem;
     }
