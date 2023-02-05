@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>To-Do app</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Daily Quest</h1>
+
+    <!--Main Quest-->
+        <form>
+            <input class="main-quest-input" type="text" placeholder="Input Quest Here..."/>
+            <button class="accept-quest-button">Accept Quest</button>
+        </form>
+
+    <!--Side Quest-->
+    <div class="side_quest_container">
+        <h2>On-going Quests</h2>
+            <form class="side_quest_form">
+                    <input class="checkbox" type="checkbox" />
+                    <input class="side-quest-input" type="text" placeholder="Main Quest" />
+                        <button class="edit-button">Edit</button>
+                        <button class="abandon-button">Abandon</button>
+                        <br />
+
+                        <!--Tempo Quest-->
+                    <input class="checkbox" type="checkbox" />
+                    <input class="side-quest-input" type="text" placeholder="Side Quest" />
+                        <button class="edit-button">Edit</button>
+                        <button class="abandon-button">Abandon</button>
+                        <br />
+                        <!--Tempo Quest-->
+                    <input class="checkbox" type="checkbox" />
+                    <input class="side-quest-input" type="text" placeholder="Unlocks at Lvl 99" />
+                        <button class="edit-button">Edit</button>
+                        <button class="abandon-button">Abandon</button>
+                        <br />
+                        
+            </form>
+        </div>
+    </div>
+    <script src="main.js"></script> <!--Note that I do not know yet how to js and I am just copying some youtuber-->
+</body>
+</html>
