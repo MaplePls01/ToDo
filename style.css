@@ -1,16 +1,28 @@
+:root {
+    --dark: #555555;
+    --darker: #2a2a2a;
+    --darkest: #181818;
+    --neutral: #808080;
+    --light: #aaaaaa;
+    --lighter: #d5d5d5;
+    --lightest: #ffffff;
+    --light-turquoise: #4CE0D2;
+    --dark-turquoise: #339989;
+}
+
 body {
-    background-color: #222831;
+    background-color: var(--darker);
     font-family: 'Courier New', Courier, monospace;
 }
 
 h1 { 
     text-align: center;
     font-size: 3rem;
-    color: gray;
+    color: var(--neutral);
 }
 
 h2 {
-    color: gray;
+    color: var(--neutral);
 }
 
 div.container {
@@ -25,8 +37,9 @@ input.main-quest-input {
     width: 520px;
     margin-left: 30px;
     height: 27px;
-    background-color: #181818;
-    color: #cabfab;
+    background-color: var(--darkest);
+    color: var(--lightest);
+    border-radius: 10px;
 }
 
 input.side-quest-input {
@@ -34,40 +47,43 @@ input.side-quest-input {
     margin-top: 5px;
     margin-bottom: 5px;
     height: 27px;
-    background-color: #181818;
-    color: #cabfab;
+    background-color: var(--darkest);
+    color: var(--lightest);
+    border-radius: 10px;
 }
 
 input.checkbox {
     width: 20px;
     height: 20px;
     align-items: center;
-    background-color: #181818;
+    background-color: var(--darker);
 }
 
 button.accept-quest-button {
-    border-color: #00adb8; 
-    background-color: #00adb8;
+    border-color: var(--dark-turquoise); 
+    background-color: var(--dark-turquoise);
     height: 27px;
+    border-radius: 7px;
 }
 
 button.accept-quest-button:hover {
     cursor: pointer;
-    background-color: #393e46;
-    color: white;
-    border-color: #393e46;
+    background-color: var(--darker);
+    border-color: var(--darker);
+    color: var(--lightest)
 }
 
 button.edit-button, button.abandon-button {
-    border-color: #00adb8; 
-    background-color: #00adb8;
+    border-color: var(--dark-turquoise); 
+    background-color: var(--dark-turquoise);
     height: 25px;
+    border-radius: 7px;
 }
 
 button.edit-button:hover, button.abandon-button:hover {
     cursor: pointer;
-    background-color: #393e46;
-    border-color: #393e46;
+    background-color: var(--darker);
+    border-color: var(--darker);
     color: white;
 }
 
@@ -75,20 +91,16 @@ button.edit-button:hover, button.abandon-button:hover {
     margin-top: 75px;
 }
 
-/* Also, take note that they say you need to design for the mobile first then proceed to desktop. 
-In order to load faster on mobile devices. */
+/* Also, take note that they say you need to design for the mobile first then proceed to desktop. In order to load faster on mobile devices. */
 
-/* Here in my case, I didnt know that concept. So I did first the desktop design then proceeded to mobile.
-This concept may be true or not, lets find out on the future learnings. */
+/* Here in my case, I didnt know that concept. So I did first the desktop design then proceeded to mobile. This concept may be true or not, lets find out on the future learnings. */
 
-/* Sooooo I learned just now that it is not important what device should you design first.
-But Im curious if I did the mobile first, will it make it load faster? 
-Who knows haha, I might try it in the future */
+/* Sooooo I learned just now that it is not important what device should you design first. But Im curious if I did the mobile first, will it make it load faster?  Who knows haha, I might try it in the future */
 
 /* For mobile devices */
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     h1 {
         font-size: 4.5rem;
     }
@@ -98,7 +110,7 @@ Who knows haha, I might try it in the future */
         width: 590px;
     }
 
-    button.accept-quest-button {
+    input.accept-quest-input {
         height: 40px;
         display: block;
         margin-left: auto;
@@ -118,4 +130,5 @@ Who knows haha, I might try it in the future */
         width: 27px;
         height: 27px;
     }
+
 }
