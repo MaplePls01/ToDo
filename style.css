@@ -23,6 +23,7 @@ h1 {
 
 h2 {
     color: var(--neutral);
+    font-size: 1.9rem;
 }
 
 div.container {
@@ -40,6 +41,7 @@ input.main-quest-input {
     background-color: var(--darkest);
     color: var(--lightest);
     border-radius: 10px;
+    font-size: .9rem;
 }
 
 input.side-quest-input {
@@ -50,6 +52,7 @@ input.side-quest-input {
     background-color: var(--darkest);
     color: var(--lightest);
     border-radius: 10px;
+    font-size: .9rem;
 }
 
 input.checkbox {
@@ -64,13 +67,14 @@ button.accept-quest-button {
     background-color: var(--dark-turquoise);
     height: 27px;
     border-radius: 7px;
+    font-size: .8rem;
 }
 
 button.accept-quest-button:hover {
     cursor: pointer;
     background-color: var(--darker);
     border-color: var(--darker);
-    color: var(--lightest)
+    color: var(--lightest);
 }
 
 button.edit-button, button.abandon-button {
@@ -78,6 +82,7 @@ button.edit-button, button.abandon-button {
     background-color: var(--dark-turquoise);
     height: 25px;
     border-radius: 7px;
+    font-size: .8rem;
 }
 
 button.edit-button:hover, button.abandon-button:hover {
@@ -103,27 +108,44 @@ button.edit-button:hover, button.abandon-button:hover {
 @media only screen and (max-width: 600px) {
     h1 {
         font-size: 4.5rem;
+        color: var(--darker);
+    }
+
+    body {
+        background-color: var(--lighter);
     }
 
     input.main-quest-input {
         height: 40px;
         width: 590px;
+        background-color: var(--lightest);
+        color: var(--darkest);
+        font-size: 1rem
     }
 
-    input.accept-quest-input {
+    button.accept-quest-button {
         height: 40px;
         display: block;
         margin-left: auto;
         margin-right: auto;
         margin-top: 15px;
+        font-size: .9rem;
     }
     
     h2 {
         font-size: 2.5rem;
+        color: var(--darker);
+    }
+
+    input.side-quest-input {
+        background-color: var(--lightest);
+        color: var(--darkest);
+        font-size: 1rem
     }
 
     input.side-quest-input, button.edit-button, button.abandon-button {
         height: 35px;
+        font-size: .9rem;
     }
 
     input.checkbox {
